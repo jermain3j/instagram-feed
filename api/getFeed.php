@@ -1,5 +1,5 @@
 <?php
-$response = file_get_contents('https://instagram.com/jaysbonsaitrees');
+$response = file_get_contents('https://instagram.com/[username]');
 $startFlag = 'window._sharedData = ';
 $startPos = strpos($response, $startFlag);
 $json_response = substr($response, ($startPos + strlen($startFlag)));
